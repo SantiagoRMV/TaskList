@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="header">Mi lista de Tareas</div>
+    <section class="content">
+        <div class="new">
+            <button class="new_task" id="new_task">Agregar Tarea</button>
+        </div>
+
+        <div class="content_card">
+            <div class="tasks">
+                <div class="message" id="message">
+                    <img src="./assets/image.png" alt="notask" srcset="" width=209px height=309px>
+                    <p>¡No tienes tareas aún! Agrega una tarea nueva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Título de la tarea</h2>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="modal-body--input" id="text_box">
+            </div>
+            <div class="modalbtn">
+                <button class="add" id="add">Agregar</button>
+                <button class="cancel" id="cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./src/button.js"></script>
+</body>
+</html>
